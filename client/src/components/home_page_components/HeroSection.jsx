@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 function HeroSection() {
   const lines = [
     "Full Stack Developer.",
-    "passionate Coder.",
+    "Passionate Coder.",
     "Front-End Developer",
   ];
 
