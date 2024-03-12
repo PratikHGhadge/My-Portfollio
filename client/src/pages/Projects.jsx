@@ -18,7 +18,7 @@ function Projects() {
       <div className=" px-4 lg:px-20 py-6 ">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 2xl:px-20">
           {ProjectDetail.map((product, index) => (
-            <div class="relative inline-flex group">
+            <div key={index} class="relative inline-flex group">
               <div class="absolute transitiona-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-secondary via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
               <div
                 key={index}

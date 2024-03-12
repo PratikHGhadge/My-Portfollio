@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { Button, Timeline } from "flowbite-react";
-import { HiArrowNarrowRight, HiCalendar } from "react-icons/hi";
+import React, { useState } from "react";
+import { Timeline } from "flowbite-react";
+import { HiCalendar } from "react-icons/hi";
 import { motion } from "framer-motion";
 import { GoCalendar } from "react-icons/go";
 
@@ -68,6 +68,7 @@ function Education() {
               {/* Education Timeline */}
               {educationData.map((education, index) => (
                 <div
+                  key={index}
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(0)}
                   className="hover:bg-secondarylight dark:hover:bg-darkSecond rounded-xl py-1 hover:shadow-xl"

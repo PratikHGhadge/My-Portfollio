@@ -60,14 +60,16 @@ function HeroSection() {
           <span className="invisible">.</span>
         </h1>
 
-        <div class="relative inline-flex group">
-          <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-secondary via-secondary to-secondary blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-          <button
-            onClick={"./"}
+        <div className="relative inline-flex group">
+          <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-secondary via-secondary to-secondary blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+          <a
+            href={
+              "https://drive.google.com/file/d/1Y84TqCNmHflgXaFWAAkMRSrFK3PM2bgq/view?usp=sharing"
+            }
             className="flex items-center text-xl relative bg-gray-200 rounded-lg py-2 px-4 font-bold"
           >
             Resume <FiDownload className="ml-2 " />
-          </button>
+          </a>
         </div>
 
         <div className="icons flex justify-center lg:justify-start mt-5">

@@ -37,8 +37,8 @@ function MySkillsAndTools() {
         {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> */}
         <div className="mb-20 w-full flex flex-wrap  justify-evenly items-center ">
           {skills.map((item, idx) => (
-            <div class="relative inline-flex group">
-              <div class="absolute transitiona-all duration-1000 rounded-full opacity-10 -inset-px bg-gradient-to-r from-secondary via-secondary to-secondary blur-lg group-hover:opacity-60 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+            <div key={idx} className="relative inline-flex group">
+              <div className="absolute transitiona-all duration-1000 rounded-full opacity-10 -inset-px bg-gradient-to-r from-secondary via-secondary to-secondary blur-lg group-hover:opacity-60 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
               <motion.div
                 key={idx}
                 className="flex relative flex-col text-center m-4  transition-all duration-100 ease-in-out"

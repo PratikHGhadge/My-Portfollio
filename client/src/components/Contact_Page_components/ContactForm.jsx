@@ -2,12 +2,12 @@ import React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { motion } from "framer-motion";
+import axios from "axios";
 
 const ContactForm = () => {
   const initialValues = {
     name: "",
     email: "",
-
     enquiry: "",
   };
 
@@ -17,13 +17,19 @@ const ContactForm = () => {
     enquiry: Yup.string().required("Required"),
   });
 
-  const handleSubmit = (values) => {
-    console.log(values); // Replace with your form submission logic
+  const handleSubmit = async (values) => {
+    console.log(values);
+    const uri = import.meta.env.VITE_BASE_URL;
+    console.log(uri);
+    const response = await axios.post(`${uri}/contact`, values);
+    if (response) {
+      alert("enquire submitted successfully.....");
+    }
   };
 
   return (
-    <div class="relative h-full group">
-      <div class="absolute h-full transitiona-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-secondary via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-60 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+    <div className="relative h-full group">
+      <div className="absolute h-full transitiona-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-secondary via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-60 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
       <div className="flex justify-center w-full  p-4 bg-white dark:bg-darkSecond  shadow-lg relative h-full rounded-lg  overflow-hidden">
         <motion.div
           variants={{

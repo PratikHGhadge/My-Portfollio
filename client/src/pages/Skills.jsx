@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import MySkillsAndTools from "../components/skills_page_components/MySkillsAndTools";
 import Services from "../components/skills_page_components/Services";
-import Other from "../components/skills_page_components/Other";
 
 function Skills() {
   const [activeTab, setActiveTab] = useState("MySkillsAndTools");
