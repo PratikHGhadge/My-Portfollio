@@ -12,9 +12,9 @@ import { Link } from "react-router-dom";
 
 function HeroSection() {
   const lines = [
-    "Front-End Developer.",
-    "Professional Coder.",
-    "UI/UX Designer.",
+    "Full Stack Developer.",
+    "passionate Coder.",
+    "Front-End Developer",
   ];
 
   const [typingText, setTypingText] = useState("");
