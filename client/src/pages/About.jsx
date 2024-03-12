@@ -17,10 +17,7 @@ function About() {
               setOpenModal(true);
             }}
           >
-            <img
-              src="https://private-user-images.githubusercontent.com/93422248/262063913-c337ab43-66ac-4757-94e3-7b92e4ee40ae.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAyNDAyMDIsIm5iZiI6MTcxMDIzOTkwMiwicGF0aCI6Ii85MzQyMjI0OC8yNjIwNjM5MTMtYzMzN2FiNDMtNjZhYy00NzU3LTk0ZTMtN2I5MmU0ZWU0MGFlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzEyVDEwMzgyMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM3ZjAwZTUxMmVhODZiZjY4Y2VmMDc4OWQwZDI4Y2ZmZDhmNWYxYjVlNzg1NGUwODZlZjU3NzE2MzAxZGQ4ZjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.QWmWnbWCuzwi2LscL3oFWznvolmwX0rc_K4LNATs9vE"
-              alt=""
-            />
+            <img src={"/assets/poster.png"} alt="" />
           </button>
 
           <Modal
