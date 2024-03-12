@@ -23,7 +23,7 @@ const ContactForm = () => {
     console.log(uri);
     const response = await axios.post(`${uri}/contact`, values);
     if (response) {
-      alert("enquire submitted successfully.....");
+      alert("enquiry submitted successfully.....");
     }
   };
 
