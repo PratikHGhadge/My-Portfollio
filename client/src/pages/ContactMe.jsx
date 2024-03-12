@@ -5,7 +5,7 @@ import ContactInfoCard from "../components/Contact_Page_components/ContactInfoCa
 function ContactMe() {
   return (
     <div id="contact">
-      <div className="bg-white py-16" id="resume">
+      <div className="bg-white dark:bg-black py-16" id="resume">
         <div className="container mx-auto">
           <div className="text-center mb-10">
             <span className="text-sm text-gray-500"></span>
@@ -17,7 +17,7 @@ function ContactMe() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="col-span-1">
                   <div class="relative inline-flex group">
-                    <div class="absolute transitiona-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+                    <div class="absolute transitiona-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-secondary via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-60 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                     <div className="relative">
                       <ContactInfoCard />
                     </div>

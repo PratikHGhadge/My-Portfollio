@@ -33,12 +33,12 @@ const skills = [
 function MySkillsAndTools() {
   return (
     <div>
-      <div className="border border-gray-300 rounded-lg p-6">
+      <div className="border dark:bg-darkSecond border-gray-300 rounded-lg p-6">
         {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8"> */}
         <div className="mb-20 w-full flex flex-wrap  justify-evenly items-center ">
           {skills.map((item, idx) => (
             <div class="relative inline-flex group">
-              <div class="absolute transitiona-all duration-1000 rounded-full opacity-10 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-60 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <div class="absolute transitiona-all duration-1000 rounded-full opacity-10 -inset-px bg-gradient-to-r from-secondary via-secondary to-secondary blur-lg group-hover:opacity-60 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
               <motion.div
                 key={idx}
                 className="flex relative flex-col text-center m-4  transition-all duration-100 ease-in-out"

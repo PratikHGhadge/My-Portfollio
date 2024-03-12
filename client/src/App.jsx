@@ -13,7 +13,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <div className="py-10 bg-secondarylight">
+      <div className="py-10 bg-secondarylight dark:bg-black  dark:text-white">
         <About />
       </div>
       <Skills />

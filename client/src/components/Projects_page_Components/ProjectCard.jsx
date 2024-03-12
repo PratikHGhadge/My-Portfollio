@@ -20,7 +20,7 @@ function ProjectCard({ product }) {
       whileInView="visible"
       // transition={{ duration: 0.5, delay: 0.25 }}
       viewport={{ once: true }}
-      className="w-full mx-auto bg-white shadow-lg  rounded-lg overflow-hidden h-full"
+      className="w-ful dark:text-white mx-auto bg-white dark:bg-darkSecond shadow-lg  rounded-lg overflow-hidden h-full"
     >
       <div className="relative overflow-hidden group">
         <img
@@ -33,8 +33,12 @@ function ProjectCard({ product }) {
         </div>
       </div>
       <div className="p-4 ">
-        <h2 className="text-xl font-semibold text-gray-800">{product.name}</h2>
-        <p className="mt-2 text-gray-600 text-justify">{product.description}</p>
+        <h2 className="text-xl dark:text-white font-semibold text-gray-800">
+          {product.name}
+        </h2>
+        <p className="mt-2 text-gray-600 dark:text-white text-justify">
+          {product.description}
+        </p>
       </div>
     </motion.div>
   );

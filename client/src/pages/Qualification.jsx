@@ -6,11 +6,13 @@ function Qualification() {
     <div id="qualification">
       {" "}
       <>
-        <div className=" bg-white py-16" id="resume">
+        <div className=" bg-white dark:bg-black py-16" id="resume">
           <div className="container mx-auto">
             <div className="text-center mb-10">
               <span className="text-sm text-gray-500"></span>
-              <h2 className="text-4xl font-bold">My Qualification</h2>
+              <h2 className="text-4xl font-bold dark:text-white">
+                My Qualification
+              </h2>
             </div>
 
             <div className="mt-12">

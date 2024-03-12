@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import PratikGITHub from "../../assets/pratik_photo1.jpg";
+import PratikGITHub from "../../../src/assets/newprofilepic.png";
 import { SiLeetcode } from "react-icons/si";
 import {
   AiFillTwitterCircle,
@@ -46,24 +46,27 @@ function HeroSection() {
   }, [index, lineIndex, lines]);
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center  h-auto  ">
+    <div className="flex flex-col lg:flex-row items-center justify-center  h-auto dark:bg-black dark:border-b ">
       {/* Left Side (Content and Button) */}
       <div className="p-8 w-full lg:w-1/2 lg:ml-28 text-center lg:text-left">
-        <span className="text-md font-secondary uppercase font-medium tracking-wider">
+        <span className="text-md font-secondary uppercase font-medium tracking-wider dark:text-white">
           Welcome to my world
         </span>
-        <h1 className="text-black text-5xl leading-normal md:leading-[1.35em] md:text-7xl xl:text-7xl 2xl:text-8xl font-bold">
-          Hi I’m <span className="text-secondaryText">Pratik</span>
+        <h1 className="text-black dark:text-white text-5xl leading-normal md:leading-[1.35em] md:text-7xl xl:text-7xl 2xl:text-8xl font-bold">
+          Hi I’m <span className=" text-secondary">Pratik</span>
         </h1>
-        <h1 className="text-black font-extrabold text-5xl leading-12 mb-6 break-words">
+        <h1 className="text-black font-extrabold text-5xl leading-12 mb-6 break-words dark:text-white">
           {typingText}
           <span className="invisible">.</span>
         </h1>
 
         <div class="relative inline-flex group">
-          <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-          <button className="flex items-center text-xl relative bg-gray-200 rounded-lg py-2 px-4 font-bold">
-            Resume <FiDownload className="ml-2" />
+          <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-secondary via-secondary to-secondary blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+          <button
+            onClick={"./"}
+            className="flex items-center text-xl relative bg-gray-200 rounded-lg py-2 px-4 font-bold"
+          >
+            Resume <FiDownload className="ml-2 " />
           </button>
         </div>
 
@@ -73,34 +76,37 @@ function HeroSection() {
             data-aos-duration="1500"
             className=" flex gap-5"
           >
-            <li>
+            <li className="">
               <Link to="https://github.com/PratikHGhadge">
                 {" "}
-                <AiFillGithub className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125" />{" "}
+                <AiFillGithub
+                  className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 text-black dark:text-white"
+                  // fill="white"
+                />{" "}
               </Link>
             </li>
             <li>
               <Link to="https://www.linkedin.com/in/pratik-ghadge-7b5056210">
                 {" "}
-                <FaLinkedinIn className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 " />{" "}
+                <FaLinkedinIn className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 dark:text-white" />{" "}
               </Link>
             </li>
             <li>
               <Link to="https://leetcode.com/Pratik_Ghadge/">
                 {" "}
-                <SiLeetcode className=" h-[1.8rem] w-[1.8rem] text-lg hover:scale-125  " />{" "}
+                <SiLeetcode className=" h-[1.8rem] w-[1.8rem] text-lg hover:scale-125 dark:text-white " />{" "}
               </Link>
             </li>
             <li>
               <Link to="https://www.instagram.com/pratik_ghadge77/">
                 {" "}
-                <AiFillInstagram className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
+                <AiFillInstagram className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 dark:text-white " />{" "}
               </Link>
             </li>
             <li>
               <Link to="https://twitter.com/PratikHG2001">
                 {" "}
-                <AiFillTwitterCircle className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125  " />{" "}
+                <AiFillTwitterCircle className=" h-[1.8rem] w-[1.8rem] text-xl hover:scale-125 dark:text-white " />{" "}
               </Link>
             </li>
           </ul>
@@ -109,10 +115,11 @@ function HeroSection() {
 
       {/* Right Side (Carousel) */}
       <div className="lg:w-1/2 lg:my-16 lg:pb-0 pb-16">
-        <div class="relative inline-flex group">
-          <div class="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#33f1ff] to-[#00ffff] blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+        <div class="relative inline-flex group ">
+          <div class="rounded-full absolute transitiona-all duration-1000 opacity-10 -inset-px bg-gradient-to-r from-[#64edff] via-[#56cdfc] to-[#0effff] blur-lg group-hover:opacity-20 dark:group-hover:opacity-50 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
           <img
-            className="rounded-md  lg:w-[25vw] my-4 w-[40vh] shadow-lg transition-transform transform hover:scale-105 filter grayscale blur-sm hover:blur-0 hover:grayscale-0  relative "
+            id="logo1"
+            className="rounded  lg:w-[30vw] my-4 w-[40vh]  transition-transform transform hover:scale-105   "
             src={PratikGITHub}
             alt="pratikphoto"
           ></img>

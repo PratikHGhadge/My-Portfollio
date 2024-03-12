@@ -12,7 +12,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-secondary p-8">
+    <footer className="bg-secondary dark:bg-black dark:border-t dark:text-white p-8">
       {/* <div className="container mx-auto flex lg:flex-row"> */}
       {/* Column 1 */}
       <div className="flex-1 mb-4 lg:mb-0 flex-row  mx-auto container ">
@@ -23,12 +23,12 @@ function Footer() {
             src={logo}
             alt="ms industries logo"
           />
-          <h1 className="text-secondaryText  text-5xl leading-normal md:leading-[1.35em] drop-shadow-2xl  font-bold text-shadow">
+          <h1 className="text-secondaryText  text-5xl leading-normal md:leading-[1.35em] drop-shadow-2xl  font-bold text-shadow ">
             Pratik
           </h1>
         </div>
         <div className="sm:flex justify-start sm:justify-between  items-start">
-          <div className="text-gray-900">
+          <div className="text-gray-900 dark:text-white">
             © 2024 Pratik Gadgee All Rights Reserved.
           </div>
           <div className="icons flex justify-center lg:justify-start mt-5 sm:mt-0 items-start">

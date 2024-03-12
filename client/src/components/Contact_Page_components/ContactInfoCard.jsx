@@ -34,7 +34,7 @@ const ContactInfoCard = () => {
         whileInView="visible"
         // transition={{ duration: 0.5, delay: 0.25 }}
         viewport={{ once: true }}
-        className=" bg-white shadow-lg  rounded-lg h-full overflow-hidden p-8"
+        className=" bg-white dark:bg-darkSecond dark:text-white shadow-lg  rounded-lg h-full overflow-hidden p-8"
         style={{ height: "100%" }}
       >
         <div className="relative overflow-hidden group">
@@ -46,17 +46,19 @@ const ContactInfoCard = () => {
           <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"></div>
         </div>
         <div className="p-4">
-          <h2 className="text-3xl my-4 font-bold text-gray-800">{data.name}</h2>
-          <h3 className="   text-gray-600 mt-4 text-xl text-justify">
+          <h2 className="text-3xl my-4 font-bold text-gray-800 dark:text-white">
+            {data.name}
+          </h2>
+          <h3 className="dark:text-white   text-gray-600 mt-4 text-xl text-justify">
             FULL STACK DEVELOPER
           </h3>
-          <p className="   text-gray-600 mt-4 text-xl text-justify">
+          <p className="dark:text-white   text-gray-600 mt-4 text-xl text-justify">
             {data.bio}
           </p>
-          <h3 className="   text-gray-600 mt-4 text-xl text-justify">
+          <h3 className="dark:text-white   text-gray-600 mt-4 text-xl text-justify">
             Email: pratikhg.2001@gmail.com
           </h3>
-          <h3 className="   text-gray-600 mt-4 text-xl text-justify">
+          <h3 className="dark:text-white   text-gray-600 mt-4 text-xl text-justify">
             FIND WITH ME
           </h3>
           <div className="h-full">

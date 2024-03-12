@@ -11,24 +11,23 @@ function Skills() {
 
   return (
     <>
-      <div id="skills" className=" py-16">
+      <div id="skills" className=" py-16 dark:bg-black">
         <div className="container mx-auto">
           <div className="text-center mb-10">
             {/* <span className="text-sm text-gray-500">
               2+ Years of Experience
             </span> */}
-            <h2 className="text-4xl font-bold">My Skills</h2>
+            <h2 className="text-4xl font-bold dark:text-white ">My Skills</h2>
           </div>
 
           <div className="mt-12">
             <ul className="flex mb-6" id="myTabs" role="tablist">
               <li className="mr-6">
                 <div class="relative inline-flex group">
-                  <div class="absolute transitiona-all  duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-100 group-inset-1 group-hover:duration-200 animate-tilt"></div>
                   <a
-                    className={` hover:text-blue-700 py-2 border-b-2 relative  border rounded-lg px-8 ${
+                    className={`dark:bg-white hover:text-blue-700 py-2 border-b-2 relative  border rounded-lg px-8 ${
                       activeTab === "MySkillsAndTools"
-                        ? "border-black-500  bg-secondary text-black"
+                        ? "border-black-500 text-blue-700"
                         : "border-transparent"
                     }`}
                     id="MySkillsAndTools-tab"
@@ -43,11 +42,10 @@ function Skills() {
               </li>
               <li className="mr-6">
                 <div class="relative inline-flex group">
-                  <div class="absolute transitiona-all  duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-100 group-inset-1 group-hover:duration-200 animate-tilt"></div>
                   <a
-                    className={` hover:text-blue-700 px-4 relative py-2  border rounded-lg px-8${
+                    className={` dark:bg-white hover:text-blue-700 py-2 border-b-2 relative  border rounded-lg px-8 ${
                       activeTab === "Services"
-                        ? "border-black-500   bg-secondary text-black"
+                        ? "border-black-500 "
                         : "border-transparent"
                     }`}
                     id="Services-tab"

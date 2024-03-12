@@ -70,7 +70,7 @@ function Education() {
                 <div
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(0)}
-                  className="hover:bg-secondarylight rounded-xl py-1 hover:shadow-xl"
+                  className="hover:bg-secondarylight dark:hover:bg-darkSecond rounded-xl py-1 hover:shadow-xl"
                 >
                   <Timeline.Item key={index}>
                     <Timeline.Point icon={HiCalendar} />
@@ -103,7 +103,7 @@ function Education() {
               whileInView="visible"
               transition={{ duration: 0.5, ease: "easeIn" }}
               viewport={{ once: true }}
-              className="relative z-10 border rounded-lg   h-full bg-secondarylight shadow-xl"
+              className="relative z-10 border rounded-lg   h-full bg-secondarylight dark:bg-darkSecond dark:text-white shadow-xl"
             >
               {data.map((education, index) => (
                 <motion.div

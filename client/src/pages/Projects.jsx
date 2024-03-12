@@ -8,7 +8,10 @@ function Projects() {
   const [openModal, setOpenModal] = useState();
   const [ind, setind] = useState(0);
   return (
-    <div id="projects" className="bg-secondarylight">
+    <div
+      id="projects"
+      className="bg-secondarylight dark:bg-black dark:text-white"
+    >
       <div className="p-8 w-full text-center ">
         <h1 className="text-4xl font-bold pt-6">Projects</h1>
       </div>
@@ -16,14 +19,14 @@ function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 2xl:px-20">
           {ProjectDetail.map((product, index) => (
             <div class="relative inline-flex group">
-              <div class="absolute transitiona-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <div class="absolute transitiona-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-secondary via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
               <div
                 key={index}
                 onClick={() => {
                   setOpenModal(true);
                   setind(index);
                 }}
-                className="hover:cursor-pointer relative"
+                className="hover:cursor-pointer relative "
               >
                 <ProjectCard product={product} />
 

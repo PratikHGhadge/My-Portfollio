@@ -34,10 +34,13 @@ function Blog() {
     <div>
       {" "}
       <>
-        <div className="bg-secondarylight pt-10 pb-16" id="resume">
-          <div className="container mx-auto">
+        <div
+          className="bg-secondarylight dark:bg-black dark:text-white pt-10 pb-16"
+          id="resume"
+        >
+          <div className="container mx-auto ">
             <div className="text-center mb-10">
-              <span className="text-sm text-gray-500"></span>
+              <span className="text-sm  text-gray-500"></span>
               <h2 className="text-4xl font-bold">My Recent Blogs</h2>
             </div>
 

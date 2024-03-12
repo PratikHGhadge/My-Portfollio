@@ -30,8 +30,8 @@ function Services() {
         <section className="dark:text-white  text-secondary ">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 flex-col md:flex-row xl:mx-16">
             {services.map((service, index) => (
-              <div class="relative inline-flex group">
-                <div class="absolute transitiona-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+              <div class=" relative inline-flex group">
+                <div class=" absolute transitiona-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-secondary  via-[#00a0df] to-secondary blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
                 <motion.div
                   variants={{
                     hidden: {
@@ -49,7 +49,7 @@ function Services() {
                   whileInView="visible"
                   // transition={{ duration: 0.5, delay: 0.25 }}
                   viewport={{ once: true }}
-                  className="bg-white shadow-lg rounded-lg overflow-hidden relative   dark:text-white  p-4 transition-colors  hover:scale-105 w-full text-black hover:text-black"
+                  className="bg-white shadow-lg rounded-lg overflow-hidden relative   dark:text-white  p-4 transition-colors  hover:scale-105 w-full text-black hover:text-black dark:bg-darkSecond"
                 >
                   <div className="text-4xl md:text-6xl">{service.icon}</div>
 

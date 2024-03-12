@@ -23,8 +23,8 @@ const ContactForm = () => {
 
   return (
     <div class="relative h-full group">
-      <div class="absolute h-full transitiona-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
-      <div className="flex justify-center w-full  p-4 bg-white shadow-lg relative h-full rounded-lg  overflow-hidden">
+      <div class="absolute h-full transitiona-all duration-1000  opacity-10 -inset-px bg-gradient-to-r from-secondary via-[#00a0df] to-[#00ffff] blur-lg group-hover:opacity-60 group-hover:-inset-1 group-hover:duration-200 animate-tilt"></div>
+      <div className="flex justify-center w-full  p-4 bg-white dark:bg-darkSecond  shadow-lg relative h-full rounded-lg  overflow-hidden">
         <motion.div
           variants={{
             hidden: {
@@ -52,13 +52,13 @@ const ContactForm = () => {
           >
             <Form className=" rounded  ">
               <div className="p-4">
-                <h3 className="   text-gray-600 mt-4 text-lg text-justify">
+                <h3 className="dark:text-white   text-gray-600 mt-4 text-lg text-justify">
                   YOUR NAME
                 </h3>
                 <Field
                   type="text"
                   name="name"
-                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-600"
                 />
                 <ErrorMessage
                   name="name"
@@ -66,26 +66,26 @@ const ContactForm = () => {
                   className="text-red-500"
                 />
 
-                <h3 className="   text-gray-600 mt-4 text-lg text-justify">
+                <h3 className="dark:text-white text-gray-600 mt-4 text-lg text-justify">
                   EMAIL
                 </h3>
                 <Field
                   type="email"
                   name="email"
-                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+                  className="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-600"
                 />
                 <ErrorMessage
                   name="email"
                   component="div"
                   className="text-red-500"
                 />
-                <h3 className="   text-gray-600 mt-4 text-lg text-justify">
+                <h3 className="dark:text-white   text-gray-600 mt-4 text-lg text-justify">
                   YOUR MESSAGE
                 </h3>
                 <Field
                   as="textarea"
                   name="enquiry"
-                  className="w-full h-32 px py-2 mt-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300"
+                  className="w-full h-32 px py-2 mt-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-600"
                 />
                 <ErrorMessage
                   name="enquiry"
@@ -95,7 +95,7 @@ const ContactForm = () => {
                 <div className="flex justify-end">
                   <button
                     type="submit"
-                    className="px-6 mt-4 py-2 font-semibold text-white bg-background rounded-md  hover:bg-black focus:outline-none"
+                    className=" px-6 mt-4 py-2 font-semibold text-white bg-background rounded-md  hover:bg-black focus:outline-none dark:bg-white dark:text-black"
                   >
                     Submit
                   </button>

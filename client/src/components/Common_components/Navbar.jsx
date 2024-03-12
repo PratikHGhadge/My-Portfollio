@@ -31,7 +31,7 @@ export default function Navbar() {
       <Disclosure
         as="nav"
         id="navbar"
-        className="bg-secondary w-full z-50 h-20 shadow"
+        className="bg-secondary dark:bg-black dark:text-white dark: dark:border-b w-full z-40  h-20 shadow"
       >
         {({ open }) => (
           <>
@@ -45,7 +45,7 @@ export default function Navbar() {
                       src={logo}
                       alt="ms industries logo"
                     />
-                    <h1 className="text-secondaryText  text-5xl leading-normal md:leading-[1.35em] drop-shadow-2xl  font-bold text-shadow">
+                    <h1 className="text-black dark:text-white text-5xl leading-normal md:leading-[1.35em] drop-shadow-2xl  font-bold text-shadow">
                       Pratik
                     </h1>
                   </div>
@@ -145,54 +145,94 @@ export default function Navbar() {
               </div>
             </div>
 
-            {/* <Disclosure.Panel className="sm:hidden">
-            <div className="pt-2 pb-3 space-y-1">
-              <ScrollLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive
-                    ? "bg-indigo-50 border-black text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
-                    : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
-                }
-                onClick={() => close()}
-              >
-                Home
-              </ScrollLink>
-              <ScrollLink
-                to="/products"
-                className={({ isActive }) =>
-                  isActive
-                    ? "bg-indigo-50 border-black text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
-                    : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
-                }
-                onClick={() => close()}
-              >
-                Products
-              </ScrollLink>
-              <ScrollLink
-                to="/about"
-                className={({ isActive }) =>
-                  isActive
-                    ? "bg-indigo-50 border-black text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
-                    : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
-                }
-                onClick={() => close()}
-              >
-                About
-              </ScrollLink>
-              <ScrollLink
-                to="/contact"
-                className={({ isActive }) =>
-                  isActive
-                    ? "bg-indigo-50 border-black text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
-                    : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
-                }
-                onClick={() => close()}
-              >
-                Contact
-              </ScrollLink>
-            </div>
-          </Disclosure.Panel> */}
+            <Disclosure.Panel className="sm:hidden relative bg-white ">
+              <div className="pt-2 pb-3 space-y- bg-white dark:bg-black">
+                <ScrollLink
+                  to="home"
+                  activeClass={
+                    "active"
+                      ? "bg-indigo-50 border-black text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                      : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                  }
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                >
+                  Home
+                </ScrollLink>
+                <ScrollLink
+                  to="about"
+                  className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                  activeClass={
+                    "active"
+                      ? "bg-indigo-50 border-black text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                      : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                  }
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                >
+                  About
+                </ScrollLink>
+                <ScrollLink
+                  to="skills"
+                  activeClass={
+                    "active"
+                      ? "bg-indigo-50 border-black text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                      : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                  }
+                  smooth={true}
+                  duration={500}
+                  className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                  spy={true}
+                >
+                  Skills
+                </ScrollLink>
+                <ScrollLink
+                  to="projects"
+                  activeClass={
+                    "active"
+                      ? "bg-indigo-50 border-black text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                      : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                  }
+                  className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                >
+                  Projects
+                </ScrollLink>
+                <ScrollLink
+                  to="qualification"
+                  activeClass={
+                    "active"
+                      ? "bg-indigo-50 border-black text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                      : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                  }
+                  className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                >
+                  Qualification
+                </ScrollLink>
+                <ScrollLink
+                  to="contact"
+                  activeClass={
+                    "active"
+                      ? "bg-indigo-50 border-black text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                      : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                  }
+                  className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-900 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                >
+                  Contact
+                </ScrollLink>
+              </div>
+            </Disclosure.Panel>
           </>
         )}
       </Disclosure>
