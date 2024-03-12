@@ -26,7 +26,10 @@ app.use(express.json());
 app.use(
   cors({
     credentials: true,
-    origin: ["http://localhost:5173"],
+    origin: [
+      "https://my-portfollio-5iqx.vercel.app",
+      "https://my-portfollio-5iqx.vercel.app/",
+    ],
   })
 );
 
