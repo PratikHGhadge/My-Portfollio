@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+#logo1 {  
+    mix-blend-mode:darken;
+    padding: 4px;
+   }
+ 
