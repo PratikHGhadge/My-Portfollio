@@ -12,7 +12,7 @@ const ContactSchema = new mongoose.Schema(
       require: [true, "email is required"],
     },
     enquiry: {
-      typ: String,
+      type: String,
     },
   },
   { timestamps: true }
